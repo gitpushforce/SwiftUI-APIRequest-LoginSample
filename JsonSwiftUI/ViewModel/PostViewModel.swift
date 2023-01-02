@@ -10,9 +10,9 @@ import Foundation
 class PostViewModel: ObservableObject {
     @Published var authenticated = 0
     
-    init() {
-        login(email: "eve.holt@reqres.in", password: "cityslicka")
-    }
+//    init() {
+//        login(email: "eve.holt@reqres.in", password: "cityslicka")
+//    }
     
     func login(email: String, password: String) {
         guard let url = URL(string: "https://reqres.in/api/login") else { return }
@@ -34,6 +34,7 @@ class PostViewModel: ObservableObject {
                 let datos = try JSONDecoder().decode(PostModel.self, from: data)
                 if !datos.token.isEmpty {
                     DispatchQueue.main.async {
+                        print(datos.token)
                         self.authenticated = 1
                     }
                 }
