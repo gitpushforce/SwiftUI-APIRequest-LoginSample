@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @EnvironmentObject var login : PostViewModel
+    
     var body: some View {
-        Text("Bienvenido!")
+        NavigationView {
+            Text("Bienvenido!")
+                .navigationTitle("JSON")
+                .navigationBarItems(leading:
+                                        
+                                        Button(action: {
+                                            UserDefaults.standard.removeObject(forKey: "session")
+                                            login.authenticated = 0
+                                        }){
+                                            Text("Salir")
+                                        }, trailing: Button(action: {
+                    
+                                        }){
+                                            Text("Siguiente")
+                                        })
+        }
+        
     }
 }
 

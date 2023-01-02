@@ -10,9 +10,13 @@ import Foundation
 class PostViewModel: ObservableObject {
     @Published var authenticated = 0
     
-//    init() {
-//        login(email: "eve.holt@reqres.in", password: "cityslicka")
-//    }
+    init() {
+        if let session = UserDefaults.standard.object(forKey: "session") as? Int {
+            authenticated = session
+        } else {
+            authenticated = 0
+        }
+    }
     
     func login(email: String, password: String) {
         guard let url = URL(string: "https://reqres.in/api/login") else { return }
@@ -36,6 +40,7 @@ class PostViewModel: ObservableObject {
                     DispatchQueue.main.async {
                         print(datos.token)
                         self.authenticated = 1
+                        UserDefaults.standard.setValue(1, forKey: "session")
                     }
                 }
                 
