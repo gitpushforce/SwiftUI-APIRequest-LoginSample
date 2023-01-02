@@ -30,11 +30,10 @@ struct Home: View {
                                            login.authenticated = 0
                                        }){
                                            Text("Salir")
-                                       }, trailing: Button(action: {
-                   
-                                       }){
-                                           Text("Siguiente")
-                                       }
+                                       }, trailing:
+                                        NavigationLink(destination: Home2()) {
+                                            Text("Siguiente")
+                                        }
                                     )
             }
         }
