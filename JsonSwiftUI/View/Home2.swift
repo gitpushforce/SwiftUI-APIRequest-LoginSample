@@ -17,17 +17,19 @@ struct Home2: View {
             ProgressView()
         } else {
             List(json2.datosModelo.data, id: \.id) { item in
-                HStack {
-                    Image(systemName: "persona.fill")
-                        .data(url: URL(string: item.avatar)!)
-                        .frame(width: 80, height: 80)
-                        .clipped()
-                        .clipShape(Circle())
-                    VStack(alignment: .leading) {
-                        Text(item.first_name).font(.title)
-                        Text(item.email).font(.subheadline)
-                    }
-                }.navigationBarTitle("JSON con imagen")
+                NavigationLink(destination: DetailView(id: item.id)) {
+                    HStack {
+                        Image(systemName: "persona.fill")
+                            .data(url: URL(string: item.avatar)!)
+                            .frame(width: 80, height: 80)
+                            .clipped()
+                            .clipShape(Circle())
+                        VStack(alignment: .leading) {
+                            Text(item.first_name).font(.title)
+                            Text(item.email).font(.subheadline)
+                        }
+                    }.navigationBarTitle("JSON con imagen")
+                }
             }
         }
     }

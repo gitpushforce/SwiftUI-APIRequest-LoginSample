@@ -20,6 +20,8 @@
 		962D36B129637EEE00162B0B /* Model2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962D36B029637EEE00162B0B /* Model2.swift */; };
 		962D36B329637F5600162B0B /* Model2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962D36B229637F5600162B0B /* Model2ViewModel.swift */; };
 		962D36B52963807200162B0B /* Home2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962D36B42963807200162B0B /* Home2.swift */; };
+		962D36B72963F69600162B0B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962D36B62963F69600162B0B /* DetailView.swift */; };
+		962D36B92963F7EA00162B0B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962D36B82963F7EA00162B0B /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		962D36B029637EEE00162B0B /* Model2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model2.swift; sourceTree = "<group>"; };
 		962D36B229637F5600162B0B /* Model2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model2ViewModel.swift; sourceTree = "<group>"; };
 		962D36B42963807200162B0B /* Home2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2.swift; sourceTree = "<group>"; };
+		962D36B62963F69600162B0B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		962D36B82963F7EA00162B0B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				962D36A329621F0100162B0B /* PostViewModel.swift */,
 				962D36AD2963690B00162B0B /* Model1ViewModel.swift */,
 				962D36B229637F5600162B0B /* Model2ViewModel.swift */,
+				962D36B82963F7EA00162B0B /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 				962D36A72962D63000162B0B /* Login.swift */,
 				962D36A92962D65100162B0B /* Home.swift */,
 				962D36B42963807200162B0B /* Home2.swift */,
+				962D36B62963F69600162B0B /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				962D36A429621F0100162B0B /* PostViewModel.swift in Sources */,
+				962D36B72963F69600162B0B /* DetailView.swift in Sources */,
 				962D36A82962D63000162B0B /* Login.swift in Sources */,
 				962D369329621B8700162B0B /* ContentView.swift in Sources */,
 				962D36A229621DB800162B0B /* PostModel.swift in Sources */,
@@ -196,6 +203,7 @@
 				962D36AC296367ED00162B0B /* Model1.swift in Sources */,
 				962D36B129637EEE00162B0B /* Model2.swift in Sources */,
 				962D36B329637F5600162B0B /* Model2ViewModel.swift in Sources */,
+				962D36B92963F7EA00162B0B /* DetailViewModel.swift in Sources */,
 				962D36AE2963690B00162B0B /* Model1ViewModel.swift in Sources */,
 				962D369129621B8700162B0B /* JsonSwiftUIApp.swift in Sources */,
 				962D36B52963807200162B0B /* Home2.swift in Sources */,
